@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href=""><img src="img/logo.png" alt="Logo do iphone" class="logo"></a>
+            <ul>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="" class="check">iPhone</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">Tv e Casa</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img class="iphoneNome" src="img/Component 1.png" alt="Iphone 15">
+                <h3>Seu novo superpoder</h3>
+                <p>O iPhone 15, esperado como o próximo lançamento da Apple, promete avanços significativos<br> em desempenho e recursos de câmera, mantendo o compromisso da marca com design<br> elegante e conectividade de ponta.</p>
+                <img class="iphone" src="img/rosaFrente.png" alt="iphone">
+                <a href="Comprar"></a>
+                <div class="text">
+                </div>
+                <div class="content">
+                    <span id="rosa" onclick="imgSlide('img/rosaTras.png','img/rosaFrente.png', 'linear-gradient(to right, #AE2CB1, #F887EC)')"></span>
+                    <span id="azul" onclick="imgSlide('img/azultras.png','img/azulFrente.png','linear-gradient(to right, #2C8CB1, #87D9F8)')"></span>
+                    <span id="amarelo" onclick="imgSlide('img/AmareloTras.png','img/AmareloFrente.png','linear-gradient(to right, #B1AB2C, #F8EC87)')"></span>
+                </div>
+                <a class="btn"  href="">Comprar</a>
+            </div>
+            <div class="main-img">
+                <img src="img/rosaTras.png" alt="iphone" id="iphone1">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        function imgSlide(e, i, color){
+            document.querySelector('#iphone1').src = e;
+            document.querySelector('.iphone').src = i;
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+
+    </script>
+    
+</body>
+</html>
